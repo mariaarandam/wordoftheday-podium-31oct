@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.2/pico.min.css"
         integrity="sha512-3gFq2IXMVlAQaUyahzhjDRivv0yqyXTb7xiy6ivTaG5Uz4hKI54uYxpQefdomgDVQ11eJVUbXG0YdPMDISiGgg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css">
 
     <title>Puntuación Final</title>
     <style>
@@ -69,6 +68,7 @@
             margin-top: 1rem;
         }
     </style>
+<script defer src="app.js"></script>
 </head>
 
 <body>
@@ -76,22 +76,22 @@
         <div class="podium">
             <div class="stand first-place">
                 <div class="place-number">1st</div>
-                <div class="player-name">Player 1</div>
-                <div class="score">X palabras adivinadas</div>
+                <div id="player1" class="player-name">Player 1</div>
+                <div id="points1" class="score"><span>X</span> palabras adivinadas</div>
             </div>
             <div class="stand second-place">
                 <div class="place-number">2nd</div>
-                <div class="player-name">Player 2</div>
-                <div class="score">X palabras adivinadas</div>
+                <div id="player2" class="player-name">Player 2</div>
+                <div id="points2" class="score"><span>X</span> palabras adivinadas</div>
             </div>
             <div class="stand third-place">
                 <div class="place-number">3rd</div>
-                <div class="player-name">Player 3</div>
-                <div class="score">X palabras adivinadas</div>
+                <div id="player3" class="player-name">Player 3</div>
+                <div id="points3" class="score"><span>X</span> palabras adivinadas</div>
             </div>
         </div>
         <div>
-            <button>
+            <button id="buttonPodium">
                 Actualizar Podium
             </button>
         </div>
